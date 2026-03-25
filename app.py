@@ -18,6 +18,21 @@ import mlflow.sklearn
 
 import logging
 
+# 🔴 CHANGE THESE VALUES
+DAGSHUB_USERNAME = "Kavya070605"
+DAGSHUB_REPO = "mlflow"
+DAGSHUB_TOKEN = "kavya rana"
+
+# ✅ Tracking URI (MUST end with .mlflow)
+mlflow.set_tracking_uri(
+    f"https://dagshub.com/Kavya070605/mlflow.mlflow"
+)
+
+# ✅ Authentication (SET BEFORE start_run)
+os.environ["MLFLOW_TRACKING_USERNAME"] = "Kavya070605"
+os.environ["MLFLOW_TRACKING_PASSWORD"] = "211318c05f00e7425568cbcc7bb19a9d78c8b15a"
+
+
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
@@ -80,8 +95,8 @@ if __name__ == "__main__":
 
         ## For Remote server only(DAGShub)
 
-        #remote_server_uri="https://dagshub.com/krishnaik06/mlflowexperiments.mlflow"
-        #mlflow.set_tracking_uri(remote_server_uri)
+        remote_server_uri="https://dagshub.com/Kavya070605/mlflow.mlflow"
+        mlflow.set_tracking_uri(remote_server_uri)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
