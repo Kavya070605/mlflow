@@ -1,0 +1,39 @@
+# 🐍 Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🧪 Virtual environment
+venv/
+env/
+.venv/
+
+# 📦 Build / distribution
+build/
+dist/
+*.egg-info/
+
+# 📊 Data & model files (ML projects)
+*.pkl
+*.joblib
+*.h5
+*.csv
+*.xlsx
+
+# 📓 Jupyter notebooks
+.ipynb_checkpoints/
+
+# 🔐 Environment variables
+.env
+
+# 📝 Logs
+*.log
+
+# 🧠 IDE / Editor files
+.vscode/
+.idea/
+
+# 🖥️ OS files
+.DS_Store
+Thumbs.db
